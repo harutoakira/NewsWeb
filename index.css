@@ -1,0 +1,142 @@
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+.main {
+    background-color: #ffffff;
+    margin: 8rem 8rem;
+}
+
+.high-light {
+    display: flex;
+    border-radius: 20px;
+    background-color: #efefef;
+    animation: hl 1.5s;
+}
+
+@keyframes hl {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.high-light a img {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.news {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin: 10px;
+    border-top: 1px solid #dedede;
+}
+
+.news img {
+    margin-right: 20px;
+    height: 100px;
+    width: 150px;
+}
+
+.h-Title {
+    margin-left: 50px;
+}
+
+.h-Title .rm {
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #5858ec;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+.h-Title .rm:hover {
+    background-color: #3333ec;
+}
+
+.h-Title p {
+    font-size: 25px;
+}
+
+.feat {
+    display: flex;
+}
+
+.feat .latest {
+    width: 40%;
+    animation: lt 2s;
+}
+
+@keyframes lt {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+.feat .trend {
+    width: 60%;
+    animation: td 2.5s;
+}
+
+@keyframes td {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.f-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.f-trend {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.trend .t-content {
+    align-items: center;
+    height: 100px;
+    margin: 10px;
+    border-top: 1px solid #dedede;
+}
+
+.t-news {
+    display: flex;
+}
+
+.t-news img {
+    margin-right: 20px;
+    height: 200px;
+    width: 300px;
+}
